@@ -1,0 +1,554 @@
+student@student-HP-ProBook-650-G2:~$ git --version
+git version 2.25.1
+student@student-HP-ProBook-650-G2:~$ mkdir test_dev
+student@student-HP-ProBook-650-G2:~$ cd --
+student@student-HP-ProBook-650-G2:~$ cd -
+/home/student
+student@student-HP-ProBook-650-G2:~$ cd test_dev
+student@student-HP-ProBook-650-G2:~/test_dev$ nano README.md
+student@student-HP-ProBook-650-G2:~/test_dev$ nano README.md
+student@student-HP-ProBook-650-G2:~/test_dev$ git init
+Dépôt Git vide initialisé dans /home/student/test_dev/.git/
+student@student-HP-ProBook-650-G2:~/test_dev$ ls
+README.md
+student@student-HP-ProBook-650-G2:~/test_dev$ git add .
+student@student-HP-ProBook-650-G2:~/test_dev$ git commit -m "initialisation"
+[master (commit racine) 72da538] initialisation
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+student@student-HP-ProBook-650-G2:~/test_dev$ cd/
+bash: cd/: Aucun fichier ou dossier de ce type
+student@student-HP-ProBook-650-G2:~/test_dev$ ls
+README.md
+student@student-HP-ProBook-650-G2:~/test_dev$ cd /
+student@student-HP-ProBook-650-G2:/$ ls
+bin    dev   lib    libx32      mnt   root  snap      sys  var
+boot   etc   lib32  lost+found  opt   run   srv       tmp
+cdrom  home  lib64  media       proc  sbin  swapfile  usr
+student@student-HP-ProBook-650-G2:/$ cd home
+student@student-HP-ProBook-650-G2:/home$ ls
+student
+student@student-HP-ProBook-650-G2:/home$ cd student
+student@student-HP-ProBook-650-G2:~$ cd test_dev
+student@student-HP-ProBook-650-G2:~/test_dev$ git branch -M main
+student@student-HP-ProBook-650-G2:~/test_dev$ git remote add origine https://github.com/Franck-Bina/test_dev.git
+student@student-HP-ProBook-650-G2:~/test_dev$ git remote set-url origin git@github.com:Franck-Bina/test_dev.git
+fatal: Pas de serveur remote 'origin'
+student@student-HP-ProBook-650-G2:~/test_dev$ git remote set-url origine git@github.com:Franck-Bina/test_dev.git
+student@student-HP-ProBook-650-G2:~/test_dev$ git push -u origine main
+git@github.com: Permission denied (publickey).
+fatal: Impossible de lire le dépôt distant.
+
+Veuillez vérifier que vous avez les droits d'accès
+et que le dépôt existe.
+student@student-HP-ProBook-650-G2:~/test_dev$ git push -u origine main
+git@github.com: Permission denied (publickey).
+fatal: Impossible de lire le dépôt distant.
+
+Veuillez vérifier que vous avez les droits d'accès
+et que le dépôt existe.
+student@student-HP-ProBook-650-G2:~/test_dev$ git remote add origin https://github.com/Franck-Bina/test_dev.git
+student@student-HP-ProBook-650-G2:~/test_dev$ git remote set-url origin git@github.com:Franck-Bina/test_dev.git
+student@student-HP-ProBook-650-G2:~/test_dev$ git push -u origin main
+git@github.com: Permission denied (publickey).
+fatal: Impossible de lire le dépôt distant.
+
+Veuillez vérifier que vous avez les droits d'accès
+et que le dépôt existe.
+student@student-HP-ProBook-650-G2:~/test_dev$ history
+    1  sudo apt-get update
+    2  sudo apt-get install git
+    3  git -v
+    4  git --version
+    5  pwd
+    6  cat
+    7  cd ..
+    8  cd -
+    9  ./restaurant
+   10  git --help
+   11  cd
+   12  cd --
+   13  cd -
+   14  ls
+   15  cd /bureau/restaurant
+   16  cd /Bureau/restaurant
+   17  cd Bureau/restaurant
+   18  echo "# restaurant" >> README.md
+   19  git init
+   20  git add README.md
+   21  git commit -m "mon premier commit"
+   22  git config --global user.email "binafranckquarrel@gmail.com"
+   23  git config --global user.name "Franck Bina"
+   24  git commit -m "mon premier commit"
+   25  git branch -M main
+   26  git remote add origin https://github.com/Franck-Bina/restaurant.git
+   27  git push -u origin main
+   28  git add .
+   29  git commit -m "mon premier commit"
+   30  git config --global user.name "Franck-Bina"
+   31  git commit -m "mon premier commit"
+   32  git branch -M main
+   33  git remote add origin https://github.com/Franck-Bina/restaurant.git
+   34  git push -u origin main
+   35  git config --list
+   36  ssh-keygen -t ed25519 -C "binafranckquarrel@gmail.com"
+   37  cat ~/ .ssh/id_ed25519.pub
+   38  ls -l  ~/.ssh 
+   39  cat ~/.ssh/id_ed25519.pub
+   40  ssh -T git@github.com
+   41  git push -u origin main
+   42  ssh-keygen -t ed25519 -C "binafranckquarrel@gmail.com"
+   43  ls -l  ~/.ssh 
+   44  cat ~/.ssh/id_rsa.pub 
+   45  pwd
+   46  cd -
+   47  cd ./home/student/docker_install.sh
+   48  ls
+   49  cd ./home/student/Bureau/docker_install.sh
+   50  pwd
+   51  cd ./Bureau/docker_install.sh
+   52  sudo sh docker_install.sh
+   53  sudo bash  docker_install.sh
+   54  sudo ./docker_install.sh
+   55  sudo ./ docker_install.sh
+   56  docker_install.sh bash
+   57  sh docker_install.sh
+   58  ls
+   59  cd Bureau/
+   60  ls
+   61  sudo bash  docker_install.sh
+   62  docker --version
+   63  ssh-keygen -t ed25519 -C "binafranckquarrel@gmail.com"
+   64  eval "$(ssh-agent -s)"
+   65  ssh-add ~/.ssh/id_ed25519
+   66  cat ~/.ssh/id_ed25519.pub
+   67  ssh -T git@github.com
+   68  ls
+   69  cd ./restaurant
+   70  history
+   71  git push -u origin main
+   72  ssh -T git@github.com
+   73  ls
+   74  git init
+   75  git branch
+   76  git remote ls
+   77  git remote -v
+   78  git config ls
+   79  git config 
+   80  cd ..
+   81  mkdir GIT
+   82  cd GIT/
+   83  git clone https://github.com/Franck-Bina/restaurant.git
+   84  ls
+   85  cd restaurant/
+   86  ls
+   87  touch README.md
+   88  git add .
+   89  git commit -m "test commit"
+   90  git branch
+   91  git remote -v
+   92  git push origin master
+   93  cat ~/.ssh/id_ed25519.pub
+   94  ssh-keygen -t ed25519 -C "binafranckquarrel@gmail.com"
+   95  eval "$(ssh-agent -s)"
+   96  ssh-add ~/.ssh/id_ed25519
+   97  cat ~/.ssh/id_ed25519.pub
+   98  ssh -T git@github.com
+   99  git remote set-url origin git@github.com:Franck-Bina/restaurant.git
+  100  cd ..
+  101  cd restaurant
+  102  git remote set-url origin git@github.com:Franck-Bina/restaurant.git
+  103  git push -u origin main
+  104  curl -fsSL https://get.docker.com -o get-docker.sh
+  105  sudo-docker.sh --version 20.10.13
+  106  mkdir webapp
+  107  cd webapp
+  108  nano Dockerfile
+  109  git clone https://github.com/Legeni07/static-website-example.git
+  110  git clone https://github.com/Legeni07/restaurant.git
+  111  docker build -t webapp_legeni:v1 .
+  112  sudo docker build -t webapp_legeni:v1 .
+  113  ls
+  114  nano Dockerfile 
+  115  sudo docker build -t we:v1 .
+  116  docker images
+  117  sudo docker build -t webapp_Franck:v1 .
+  118  sudo docker build -t webapp_franck:v1 .
+  119  docker images
+  120  sudo docker images
+  121  sudo docker images rm webapp_legeni
+  122  sudo docker rm images  webapp_legeni
+  123  sudo docker run --web_franck webapp -d -p 80:80 webapp:v1
+  124  docker run --help
+  125  sudo docker run --name webappfranck -d -p 80:80 webapp_franck:v1
+  126  sudo docker run --name webappfranck2 -d -p 8002:80 webapp_franck:v1
+  127  sudo docker tag id_image eazytraining/webapp:v1
+  128  docker images
+  129  sudo docker images
+  130  docker tag a520da881ca2 eazytraining/webapp:v1
+  131  sudo docker tag a520da881ca2 eazytraining/webapp:v1
+  132  docker push training/webapp:v1
+  133  sudo docker push training/webapp:v1
+  134  sudo docker tag a520da881ca2 franckbina/webapp_franck:v1
+  135  sudo docker login
+  136  sudo docker login -u <franckbina>
+  137  sudo docker login
+  138  sudo docker push training/a520da881ca2:v1
+  139  sudo docker push training/webapp_franck:v1
+  140  sudo docker push franckbina/webapp_franck:v1
+  141  sudo apt update
+  142  sudo apt upgrade
+  143  sudo apt install apache2 php libapache2-mod-php mysql-server php-mysql
+  144  sudo apt install php-curl php-gd php-intl php-json php-mbstring php-xml php-zip
+  145  lamp --version
+  146  sudo systemctl disable apache2
+  147  sudo ufw allow ssh
+  148  sudo ufw allow 80
+  149  sudo ufw allow 443
+  150  sudo ufw enable
+  151  sudo apt install php-curl php-gd php-intl php-json php-mbstring php-xml php-zip
+  152  sudo systemctl disable apache2\
+  153  apache2 -v
+  154  sudo systemctl disable apache2
+  155  sudo ufw allow ssh
+  156  sudo apt install apache2
+  157  sudo systemctl status apache2
+  158  sudo apt install php7.4 php7.4-mysql php-common php7.4-cli php7.4-json php7.4-common php7.4-opcache libapache
+  159  sudo apt install php7.4 php7.4-mysql php-common php7.4-cli php7.4-json php7.4-common php7.4-opcache libapache2-mod-php7.4
+  160  php --version
+  161  sudo systemctl restart apache2
+  162  echo '<?php phpinfo(); ?>' | sudo tee -a /var/www/html/phpinfo.php > /dev/null
+  163  echo '<?php phpinfo(); ?>'
+  164  sudo tee -a /var/www/html/phpinfo.php > /dev/null
+  165  echo '<?php phpinfo(); ?>' | sudo tee -a /var/www/html/phpinfo.php > /dev/null
+  166  sudo rm /var/www/html/phpinfo.php
+  167  lamp --version
+  168  lamp -v
+  169  apache2 -v
+  170  my sql --version
+  171  sudo mysql
+  172  exit
+  173  php -v
+  174  mariadb --version
+  175  mysql --version
+  176  sudo apt install mysql-client-core-8.0
+  177  mysql --version
+  178  lamp -v
+  179  sudo systemctl status apache2
+  180  sudo systemctl status mysql
+  181  history
+  182  git --version
+  183  mkdir test_dev
+  184  cd --
+  185  cd -
+  186  cd test_dev
+  187  nano README.md
+  188  git init
+  189  ls
+  190  git add .
+  191  git commit -m "initialisation"
+  192  cd/
+  193  ls
+  194  cd /
+  195  ls
+  196  cd home
+  197  ls
+  198  cd student
+  199  cd test_dev
+  200  git branch -M main
+  201  git remote add origine https://github.com/Franck-Bina/test_dev.git
+  202  git remote set-url origin git@github.com:Franck-Bina/test_dev.git
+  203  git remote set-url origine git@github.com:Franck-Bina/test_dev.git
+  204  git push -u origine main
+  205  git remote add origin https://github.com/Franck-Bina/test_dev.git
+  206  git remote set-url origin git@github.com:Franck-Bina/test_dev.git
+  207  git push -u origin main
+  208  history
+student@student-HP-ProBook-650-G2:~/test_dev$ cd/
+bash: cd/: Aucun fichier ou dossier de ce type
+student@student-HP-ProBook-650-G2:~/test_dev$ ssh -T git@github.com
+git@github.com: Permission denied (publickey).
+student@student-HP-ProBook-650-G2:~/test_dev$ ssh-keygen -t ed25519 -C "binafranckquarrel@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/student/.ssh/id_ed25519): 
+/home/student/.ssh/id_ed25519 already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/student/.ssh/id_ed25519
+Your public key has been saved in /home/student/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:NY91a+0AdHNcGzut8Dv/Df7qaw9RC19kIIKmUOPuGDA binafranckquarrel@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|     .o  .. o ++*|
+|    .. .o  o o =*|
+|  E  ..o  o +..++|
+|   o ..  . = =o=+|
+|    . . S . . Bo.|
+|     +       . = |
+|    . .       = .|
+|             ..=.|
+|             o==B|
++----[SHA256]-----+
+student@student-HP-ProBook-650-G2:~/test_dev$ ssh-add ~/.ssh/id_ed25519
+Identity added: /home/student/.ssh/id_ed25519 (binafranckquarrel@gmail.com)
+student@student-HP-ProBook-650-G2:~/test_dev$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJb7jjZpTxYaDC0iigAjinq8YsZYDVuyKKNA5U44G6J6 binafranckquarrel@gmail.com
+student@student-HP-ProBook-650-G2:~/test_dev$ ssh -T git@github.com
+Hi Franck-Bina! You've successfully authenticated, but GitHub does not provide shell access.
+student@student-HP-ProBook-650-G2:~/test_dev$ git push -u origin main
+Énumération des objets: 3, fait.
+Décompte des objets: 100% (3/3), fait.
+Compression par delta en utilisant jusqu'à 4 fils d'exécution
+Compression des objets: 100% (2/2), fait.
+Écriture des objets: 100% (3/3), 273 octets | 273.00 Kio/s, fait.
+Total 3 (delta 0), réutilisés 0 (delta 0)
+To github.com:Franck-Bina/test_dev.git
+ * [new branch]      main -> main
+La branche 'main' est paramétrée pour suivre la branche distante 'main' depuis 'origin'.
+student@student-HP-ProBook-650-G2:~/test_dev$ nano index.html
+student@student-HP-ProBook-650-G2:~/test_dev$ git add .
+student@student-HP-ProBook-650-G2:~/test_dev$ git commit -M "ajout du fichier index.html"
+error: bascule inconnue « M »
+usage : git commit [<options>] [--] <spécification-de-chemin>...
+
+    -q, --quiet           supprimer le résumé après une validation réussie
+    -v, --verbose         afficher les diff dans le modèle de message de validation
+
+Options du message de validation
+    -F, --file <fichier>  lire le message depuis un fichier
+    --author <auteur>     remplacer l'auteur pour la validation
+    --date <date>         remplacer la date pour la validation
+    -m, --message <message>
+                          message de validation
+    -c, --reedit-message <commit>
+                          réutiliser et éditer le message du commit spécifié
+    -C, --reuse-message <commit>
+                          réutiliser le message du commit spécifié
+    --fixup <commit>      utiliser un message au format autosquash pour corriger le commit spécifié
+    --squash <commit>     utiliser un message au format autosquash pour compresser le commit spécifié
+    --reset-author        à présent je suis l'auteur de la validation (utilisé avec -C/-c/--amend)
+    -s, --signoff         ajouter une entrée Signed-off-by :
+    -t, --template <fichier>
+                          utiliser le fichier de modèle spécifié
+    -e, --edit            forcer l'édition du commit
+    --cleanup <mode>      comment éliminer les espaces et les commentaires # du message
+    --status              inclure l'état dans le modèle de message de validation
+    -S, --gpg-sign[=<id-clé>]
+                          signer la validation avec GPG
+
+Valider les options des contenus
+    -a, --all             valider tous les fichiers modifiés
+    -i, --include         ajouter les fichiers spécifiés à l'index pour la validation
+    --interactive         ajouter des fichiers en mode interactif
+    -p, --patch           ajouter les modifications en mode interactif
+    -o, --only            valider seulement les fichiers spécifiés
+    -n, --no-verify       éviter d'utiliser les crochets pre-commit et commit-msg
+    --dry-run             afficher ce qui serait validé
+    --short               afficher l'état avec concision
+    --branch              afficher l'information de branche
+    --ahead-behind        calcule les valeurs complètes en avance/en retard
+    --porcelain           sortie pour traitement automatique
+    --long                afficher l'état en format long (par défaut)
+    -z, --null            terminer les éléments par NUL
+    --amend               corriger la validation précédente
+    --no-post-rewrite     éviter d'utiliser le crochet post-rewrite
+    -u, --untracked-files[=<mode>]
+                          afficher les fichiers non suivis, "mode" facultatif : all (tous), normal, no. (Défaut : all)
+    --pathspec-from-file <fichier>
+                          lire les spécificateurs de fichier depuis fichier
+    --pathspec-file-nul   avec --pathspec-from-file, les spécificateurs de chemin sont séparés par un caractère NUL
+
+student@student-HP-ProBook-650-G2:~/test_dev$ git commit -m "ajout du fichier index.html"
+[main 90819fa] ajout du fichier index.html
+ 1 file changed, 29 insertions(+)
+ create mode 100644 index.html
+student@student-HP-ProBook-650-G2:~/test_dev$ git push -u origin main
+Énumération des objets: 4, fait.
+Décompte des objets: 100% (4/4), fait.
+Compression par delta en utilisant jusqu'à 4 fils d'exécution
+Compression des objets: 100% (3/3), fait.
+Écriture des objets: 100% (3/3), 630 octets | 630.00 Kio/s, fait.
+Total 3 (delta 0), réutilisés 0 (delta 0)
+To github.com:Franck-Bina/test_dev.git
+   72da538..90819fa  main -> main
+La branche 'main' est paramétrée pour suivre la branche distante 'main' depuis 'origin'.
+student@student-HP-ProBook-650-G2:~/test_dev$ nano travail.txt
+student@student-HP-ProBook-650-G2:~/test_dev$ nano unhimasl.txt
+student@student-HP-ProBook-650-G2:~/test_dev$ git commit -m "nouveau travail"
+Sur la branche main
+Votre branche est à jour avec 'origin/main'.
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+	travail.txt
+	unhimas.txt
+
+aucune modification ajoutée à la validation mais des fichiers non suivis sont présents (utilisez "git add" pour les suivre)
+student@student-HP-ProBook-650-G2:~/test_dev$ git add .
+student@student-HP-ProBook-650-G2:~/test_dev$ git commit -m "nouveau travail"
+[main 7567b89] nouveau travail
+ 2 files changed, 2 insertions(+)
+ create mode 100644 travail.txt
+ create mode 100644 unhimas.txt
+student@student-HP-ProBook-650-G2:~/test_dev$ git push -u origin main
+Énumération des objets: 5, fait.
+Décompte des objets: 100% (5/5), fait.
+Compression par delta en utilisant jusqu'à 4 fils d'exécution
+Compression des objets: 100% (2/2), fait.
+Écriture des objets: 100% (4/4), 409 octets | 409.00 Kio/s, fait.
+Total 4 (delta 0), réutilisés 0 (delta 0)
+To github.com:Franck-Bina/test_dev.git
+   90819fa..7567b89  main -> main
+La branche 'main' est paramétrée pour suivre la branche distante 'main' depuis 'origin'.
+student@student-HP-ProBook-650-G2:~/test_dev$ cd ..
+student@student-HP-ProBook-650-G2:~$ git pull https://github.com/Legeni07/test.git
+fatal: ni ceci ni aucun de ses répertoires parents n'est un dépôt git : .git
+student@student-HP-ProBook-650-G2:~$ mkdir test
+student@student-HP-ProBook-650-G2:~$ cd test
+student@student-HP-ProBook-650-G2:~/test$ git init
+Dépôt Git vide initialisé dans /home/student/test/.git/
+student@student-HP-ProBook-650-G2:~/test$ git pull https://github.com/Legeni07/test.git
+remote: Enumerating objects: 209, done.
+remote: Counting objects: 100% (209/209), done.
+remote: Compressing objects: 100% (118/118), done.
+remote: Total 209 (delta 84), reused 188 (delta 66), pack-reused 0 (from 0)
+Réception d'objets: 100% (209/209), 24.11 Kio | 8.04 Mio/s, fait.
+Résolution des deltas: 100% (84/84), fait.
+Depuis https://github.com/Legeni07/test
+ * branch            HEAD       -> FETCH_HEAD
+student@student-HP-ProBook-650-G2:~/test$ ls
+2test.css   alias.txt   cat.txt          Dochrane.js  GITB1B.md       liste_b1a.md  luc.php                   ngassa.txt       README.md   scam3   Solange.mb  ya.php
+2test.js    alomo.js    christLK.txt     fileA.txt    Guerar_b1a.md   listeb1b.fts  makcedzoa.txt             ODJAGA.txt       SALUT_MICH  scam4   Solange.md  ye.html
+ado.js      alyzée.md   Détention        fileB.txt    Guerar_b1a.txt  listeb1b.md   MBAB1b.md                 perol            scam        scam5   steve.html  yimga.txt
+Adonya.txt  alyzée.txt  Dochrane         fileC.txt    HAINONWA.txt    liste.md      Mde_3.txt                 ph               scam1       scam6   tamo.hml    yo.xml
+Alan.txt    amina.css   Dochrane❤️+2.txt  fileD.txt    ignore          luciano.txt   NDENGUE_FONZE_BRINDEL.md  Prescillia❤️.txt  scam2       scam.h  toto.xml
+student@student-HP-ProBook-650-G2:~/test$ touch Franck.txt
+student@student-HP-ProBook-650-G2:~/test$ git add .
+student@student-HP-ProBook-650-G2:~/test$ git commit -m "Franck Bina"
+[master d2e81c7] Franck Bina
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Franck.txt
+student@student-HP-ProBook-650-G2:~/test$ git push -u origin main
+error: le spécificateur de référence source main ne correspond à aucune référence
+error: impossible de pousser des références vers 'origin'
+student@student-HP-ProBook-650-G2:~/test$ git branch
+* master
+student@student-HP-ProBook-650-G2:~/test$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Impossible de lire le dépôt distant.
+
+Veuillez vérifier que vous avez les droits d'accès
+et que le dépôt existe.
+student@student-HP-ProBook-650-G2:~/test$ git remote branch
+error: Sous-commande inconnue : branch
+usage : git remote [-v | --verbose]
+   ou : git remote add [-t <branche>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <nom> <url>
+   ou : git remote rename <ancienne> <nouvelle>
+   ou : git remote remove <nom>
+   ou : git remote set-head <nom> (-a | --auto | -d | --delete | <branche>)
+   ou : git remote [-v | --verbose] show [-n] <nom>
+   ou : git remote prune [-n | --dry-run] <nom>
+   ou : git remote [-v | --verbose] update [-p | --prune] [(<groupe> | <distante>)...]
+   ou : git remote set-branches [--add] <nom> <branche>...
+   ou : git remote get-url [--push] [--all] <nom>
+   ou : git remote set-url [--push] <nom> <nouvelle-URL> [<ancienne-URL>]
+   ou : git remote set-url --add <nom> <nouvelle-URL>
+   ou : git remote set-url --delete <nom> <url>
+
+    -v, --verbose         être verbeux : doit être placé avant une sous-commande
+
+student@student-HP-ProBook-650-G2:~/test$ git remote -r
+error: bascule inconnue « r »
+usage : git remote [-v | --verbose]
+   ou : git remote add [-t <branche>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <nom> <url>
+   ou : git remote rename <ancienne> <nouvelle>
+   ou : git remote remove <nom>
+   ou : git remote set-head <nom> (-a | --auto | -d | --delete | <branche>)
+   ou : git remote [-v | --verbose] show [-n] <nom>
+   ou : git remote prune [-n | --dry-run] <nom>
+   ou : git remote [-v | --verbose] update [-p | --prune] [(<groupe> | <distante>)...]
+   ou : git remote set-branches [--add] <nom> <branche>...
+   ou : git remote get-url [--push] [--all] <nom>
+   ou : git remote set-url [--push] <nom> <nouvelle-URL> [<ancienne-URL>]
+   ou : git remote set-url --add <nom> <nouvelle-URL>
+   ou : git remote set-url --delete <nom> <url>
+
+    -v, --verbose         être verbeux : doit être placé avant une sous-commande
+
+student@student-HP-ProBook-650-G2:~/test$ git branch -r
+student@student-HP-ProBook-650-G2:~/test$ git branch remote -v
+student@student-HP-ProBook-650-G2:~/test$ git branch 
+* master
+  remote
+student@student-HP-ProBook-650-G2:~/test$ git push -u master  master
+fatal: 'master' does not appear to be a git repository
+fatal: Impossible de lire le dépôt distant.
+
+Veuillez vérifier que vous avez les droits d'accès
+et que le dépôt existe.
+student@student-HP-ProBook-650-G2:~/test$ git push -u master  main
+error: le spécificateur de référence source main ne correspond à aucune référence
+error: impossible de pousser des références vers 'master'
+student@student-HP-ProBook-650-G2:~/test$ git push -u main  master
+fatal: 'main' does not appear to be a git repository
+fatal: Impossible de lire le dépôt distant.
+
+Veuillez vérifier que vous avez les droits d'accès
+et que le dépôt existe.
+student@student-HP-ProBook-650-G2:~/test$ git remote add origin
+usage : git remote add [<options>] <nom> <URL>
+
+    -f, --fetch           rapatrier les branches distantes
+    --tags                importer toutes les étiquettes et les objets associés lors du rapatriement
+                          ou ne rapatrier aucune étiquette (--no-tags)
+    -t, --track <branche>
+                          branche(s) à suivre
+    -m, --master <branche>
+                          branche maîtresse
+    --mirror[=(push|fetch)]
+                          paramétrer la distante comme miroir pour pousser ou pour rapatrier depuis
+
+student@student-HP-ProBook-650-G2:~/test$ git remote add origin https://github.com/Legeni07/test.git
+student@student-HP-ProBook-650-G2:~/test$ git push -u origin master
+fatal: impossible d'accéder à 'https://github.com/Legeni07/test.git/' : Could not resolve host: github.com
+student@student-HP-ProBook-650-G2:~/test$ git push -u origin main
+error: le spécificateur de référence source main ne correspond à aucune référence
+error: impossible de pousser des références vers 'https://github.com/Legeni07/test.git'
+student@student-HP-ProBook-650-G2:~/test$ git push -u origin master
+Username for 'https://github.com': ^C
+student@student-HP-ProBook-650-G2:~/test$ git remote set-url origin git@github.com:Franck-Bina/test.git
+student@student-HP-ProBook-650-G2:~/test$ git push -u origin master
+ERROR: Repository not found.
+fatal: Impossible de lire le dépôt distant.
+
+Veuillez vérifier que vous avez les droits d'accès
+et que le dépôt existe.
+student@student-HP-ProBook-650-G2:~/test$ git remote set-url origin git@github.com:Legeni07/test.git
+student@student-HP-ProBook-650-G2:~/test$ git push -u origin master
+ERROR: Permission to Legeni07/test.git denied to Franck-Bina.
+fatal: Impossible de lire le dépôt distant.
+
+Veuillez vérifier que vous avez les droits d'accès
+et que le dépôt existe.
+student@student-HP-ProBook-650-G2:~/test$ git push -u origin master
+Énumération des objets: 3, fait.
+Décompte des objets: 100% (3/3), fait.
+Compression par delta en utilisant jusqu'à 4 fils d'exécution
+Compression des objets: 100% (2/2), fait.
+Écriture des objets: 100% (2/2), 240 octets | 240.00 Kio/s, fait.
+Total 2 (delta 1), réutilisés 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Legeni07/test/pull/new/master
+remote: 
+To github.com:Legeni07/test.git
+ * [new branch]      master -> master
+La branche 'master' est paramétrée pour suivre la branche distante 'master' depuis 'origin'.
+student@student-HP-ProBook-650-G2:~/test$ cd ../
+student@student-HP-ProBook-650-G2:~$ cd test
+test/     test_dev/ 
+student@student-HP-ProBook-650-G2:~$ cd test_dev/
+student@student-HP-ProBook-650-G2:~/test_dev$ nano history
